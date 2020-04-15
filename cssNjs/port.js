@@ -18,11 +18,12 @@
           case "6" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); } break;
           case "7" : { alert("<== Pause 7st ==>"); } break;
                    }
-      /*setTimeout("top.location='http://"+location.hostname+"/"+website[idx]+"/';",3000);*/
+      /*setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000);*/
          }
-    else { alert ('The URL was not found on the server.\nError 404 網址有誤請查明。');
+      else { alert ('The URL was not found on the server.\nError 404 網址有誤請查明。');
            var curno=Math.floor(Math.random()*2);
            if (curno) top.location='https://www.google.com.tw/'; else top.location='https://tw.yahoo.com/'; }
+         }
 // -----------------------------------------------------------------------------------------------------//           
 function getUrlVars(variable)
 {
@@ -32,5 +33,6 @@ function getUrlVars(variable)
                var pair = vars[i].split("=");
                if(pair[0] == variable){return pair[1];}
        }
-       return(false);
+       return(false);       
 }
+// -----------------------------------------------------------------------------------------------------//
