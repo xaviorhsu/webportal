@@ -22,7 +22,7 @@
          }
       else { alert ('The URL was not found on the server.\nError 404 網址有誤請查明。');
            var curno=Math.floor(Math.random()*2);
-           if (curno) top.location='https://www.google.com.tw/'; else top.location='https://tw.yahoo.com/'; }
+           if (curno) top.location='https://www.google.com.tw/'; else top.location='https://tw.yahoo.com/';
          }
 // -----------------------------------------------------------------------------------------------------//           
 function getUrlVars(variable)
