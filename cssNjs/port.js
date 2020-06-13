@@ -15,7 +15,8 @@
           case "3" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/hsus_Family.html';",3000); } break;
           case "4" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/00webappproject1.html';",3000); } break;
           case "5" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/Send_Recv.html';",3000); } break;
-          case "6" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); } break;
+          case "6" : { if (location.hostname=="websrv.local.tw") { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); }
+                       else  { setTimeout("top.location='https://www.all4u.me';",3000); } } break;
           case "7" : { alert("<== Pause 7st ==>"); } break;
                    }
       /*setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000);*/
