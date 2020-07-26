@@ -1,7 +1,7 @@
     var HTTP_IP=(location.hostname=="websrv.local.tw")?"http://websrv.local.tw/":"https://"+location.hostname+"/";
 
-    var website =["","forevers","cu4103","hsusF","webapp","SR2FB","All4u"];
-    var pagename=['','安久號烏魚子專門店','台南市開山儲蓄互助社-Welcome首頁','徐氏歷代子孫在台族譜','物聯網Webapp_Project','物聯網SendRecv_Firebase case','All4u-080共生小棧'];
+    var website =["","forevers","cu4103","hsusF","webapp","SR2FB","All4u","ue1rent"];
+    var pagename=['','安久號烏魚子專門店','台南市開山儲蓄互助社-Welcome首頁','徐氏歷代子孫在台族譜','物聯網Webapp_Project','物聯網SendRecv_Firebase case','All4u-080共生小棧','招租㊣紅瓦厝'];
     var idx=(location.hostname=="websrv.local.tw")?"0":"1";
 	var paValue=getUrlVars("sw");
     idx=(paValue)?paValue:0;
@@ -17,7 +17,8 @@
           case "5" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/Send_Recv.html';",3000); } break;
           case "6" : { if (location.hostname=="websrv.local.tw") { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); }
                        else  { setTimeout("top.location='https://www.all4u.me';",3000); } } break;
-          case "7" : { alert("<== Pause 7st ==>"); } break;
+          case "7" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); } break;
+          case "8" : { alert("<== Pause 7st ==>"); } break;
                    }
       /*setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000);*/
          }
