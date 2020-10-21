@@ -3,13 +3,13 @@
 @font-face{ /* 字體下載 */
         font-family: AA ;src:url(https://fonts.googleapis.com/css?family=Baloo+Bhai|Noto+Sans+TC|Oswald&display=swap);
         }
-body	{   margin: 0 ; font-size: 16px;
+body	{ margin: 0 ; font-size: 16px;
           background-color:lightgray;
           /*background-image: url(../img/home-bg.jpg);*/
           background-attachment: fixed;
           background: linear-gradient(-10deg,gray 0%,lawngreen 50%,red 90%);
         }
-#banner { margin: 0 auto; width: 80%; height: 200px; /*border: 3px solid blue;*/
+#banner { clear: both; margin: 0 auto; width: 82%; height: 200px; /*border: 3px solid blue;*/
           position: relative; top: 0px; left: 0px;
           background-image: url(../pic/about-header.jpg);
           background-position: 100% center;
@@ -17,18 +17,18 @@ body	{   margin: 0 ; font-size: 16px;
           background-size : cover;
           opacity: 1;
         }
-nav     { position: absolute; bottom: 5%; right: 5px;
-          /*position: fixed; bottom: 0px; right: 0px;
-          margin-top: 3%; margin-left: 3%; float: left;*/
-          color:darkblue; font-size: 2.5vw; font-weight: bolder; float: right;
-          border-left: 10px solid darkblue; border-right: 10px solid darkblue;
-          text-shadow:1px 2px 2px cyan;
-        }
-#sitem  { margin-top:9%;margin-left:7%;text-align:center;
-          color: darkblue; font-size: 2vw; font-weight: bolder;
+#sitem  { margin-top:1.5%;margin-left:5%;float:left; width: 82%;text-align:center;
+          color: darkblue; font-size: 1.8vw; font-weight: bolder;
           text-shadow:1px 2px 2px chartreuse;
         }
-nav a,#sitem div.service-item a
+#nav    { /*position: absolute; bottom: 2%; right: 5px;
+          position: fixed; bottom: 0px; right: 0px;*/
+          margin-top: 1%; margin-right: 2%; float: right; width:auto;
+          color:darkblue; font-size: 2.3vw; font-weight: bolder;
+          border-left: 10px solid darkblue;border-right: 10px solid darkblue;
+          text-shadow:1px 2px 2px cyan;text-align:right;
+        }
+#nav a,#sitem div.service-item a
         { color:darkblue;
           text-decoration: none; text-shadow: 1px 2px 2px chartreuse;
           font-weight: bolder;font-size: 1.0em; font-variant: small-caps;
@@ -40,12 +40,12 @@ nav a,#sitem div.service-item a
           -moz-transition: 1s ease;
           -o-transition: 1s ease;
         }
-nav a:hover,#sitem div.service-item a:hover
+#nav a:hover,#sitem div.service-item a:hover
         { background-color: brown; border: 2px solid yellow; color: white;
          text-decoration: underline;}
 #logo-text{
      /*position: absolute; left: auto; top: 200px; right: 300px;*/
-     margin-top: 1%; margin-left: 2%; float: left;
+     margin-top: 0%; margin-left: 2%; float: left;
      color: cyan;
      font-variant: small-caps;font-size: 4vw;/*text-transform: uppercase;*/
      text-shadow: 2px 15px 3px blue,
@@ -53,13 +53,13 @@ nav a:hover,#sitem div.service-item a:hover
                   20px 20px 3px darkred;
 }
 #service {
-    width: 75%; margin: -10px auto; height: auto;
+    margin: -10px auto; width: 78%; height: auto;
     /*border: 2px solid greenyellow;
     background-color: brown;*/
 }
-.service-item {
-    width: 30%; height: auto; margin: 3px 0px; float:left;padding: 1px;
-    background-color: lightyellow; border: 1x solid gray;
+div .service-item {
+    width: 31%; height: auto; margin: 2px 1px; float:left; padding: 0px;
+    background-color: lightyellow; border: 1x solid darkred;
     background: repeating-radial-gradient(farthest-side ellipse at 70% 50%,#F00 40%,#FF0 100%);    
     /*display: inline-block;*/
 }
@@ -110,7 +110,7 @@ nav a:hover,#sitem div.service-item a:hover
   border: 2px solid blue;
 }
 #context {
-  clear: both; width: 80%; height: auto; margin: auto;
+  clear: both; margin: auto; width: 80%; height: auto;
    background-color: cadetblue; /*border: 1px solid greenyellow;*/
    font-size: 1.5vw;
    /*text-align: justify;*/   
