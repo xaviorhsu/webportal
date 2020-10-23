@@ -10,7 +10,7 @@ $(document).ready(function()  {
     });
 /* --------------- Navidat --------------*/
 var yymmddcc=show_today();
-      date='<b> 民國'+(yymmddcc[0]-1911)+'年'+yymmddcc[2]+'月'+yymmddcc[3]+'日 星期'+yymmddcc[4]+'</b>';
+      date='<b>-- Welcome To Our Web Portal -- 民國'+(yymmddcc[0]-1911)+'年'+yymmddcc[2]+'月'+yymmddcc[3]+'日 星期'+yymmddcc[4]+'</b>';
       $('#Dd0').html(date);
 //            產生民國xxx年xx月xx日星期X xx時xx分xx秒的資料
 function show_today(){
