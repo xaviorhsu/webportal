@@ -10,7 +10,9 @@
     if(website[idx]!=""&&website[idx]!=undefined) {
       switch(idx)  {
           case "0" : { alert("<== Pause 0st ==>"); } break;
-          case "1" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); } break;
+          case "1" : { if(location.hostname=="websrv.local.tw")
+							setTimeout("top.location='https://www.forevers.com.tw';",3000);
+					   else setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); } break;
           case "2" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); } break;
           case "3" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/hsus_Family.html';",3000); } break;
           case "4" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/00webappproject1.html';",3000); } break;
