@@ -21,7 +21,9 @@
           case "6" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); } break;
           case "7" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); } break;
 		  case "8" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); } break;
-		  case "9" : { setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000); } break;
+		  case "9" : { if(location.hostname=="websrv.local.tw")
+							setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000);
+					   else setTimeout("top.location='https://tncath.catholic.org.tw/';",3000); } break;
           case "A" : { alert("<== Pause Ast ==>"); } break;
                    }
       /*setTimeout("top.location='"+HTTP_IP+website[idx]+"/';",3000);*/
